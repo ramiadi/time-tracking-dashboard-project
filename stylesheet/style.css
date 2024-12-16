@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(226, 43%, 10%);
+  font-family: "Arial", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .name {
+    display: grid;
+    grid-template-rows: 0fr auto !important;
+    grid-row: 1 / 3;
+  }
+
+  .name-content {
+    display: flex;
+    flex-direction: column;
+  }
+  /* the div inside name-content  */
+  .name-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-block-end: 7rem;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline-start: 1rem;
+  }
+  .button-group button {
+    font-size: 1rem;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.name {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+  text-align: center;
+  background-color: hsl(235, 46%, 20%);
+  color: white;
+  border-radius: 20px;
+}
+
+.name-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: hsl(246, 80%, 60%);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.name-content h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.name-content p {
+  margin: 0;
+  color: gray;
+}
+
+.name img {
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  padding-block: 1rem;
+  background-color: hsl(235, 46%, 20%);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.button-group button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  font-weight: bold;
+  color: hsl(246, 80%, 60%);
+}
+
+.button-group button:hover {
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.work,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* add a hover effect with the boxes  */
+.work:hover,
+.play:hover,
+.study:hover,
+.exercise:hover,
+.social:hover,
+.self-care:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+.work-content,
+.play-content,
+.study-content,
+.exercise-content,
+.social-content,
+.self-care-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: hsl(235, 46%, 20%);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+/* add hover effect on content */
+.work-content:hover,
+.play-content:hover,
+.study-content:hover,
+.exercise-content:hover,
+.social-content:hover,
+.self-care-content:hover {
+  background-color: hsl(235, 46%, 30%);
+}
+
+.work-background,
+.play-background,
+.study-background,
+.exercise-background,
+.social-background,
+.self-care-background {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.work-background img,
+.play-background img,
+.study-background img,
+.exercise-background img,
+.social-background img,
+.self-care-background img {
+  float: right;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: white;
+}
+
+p {
+  margin: 0.5rem 0;
+  color: gray;
+  font-size: 1rem;
+}
+
+p span.number {
+  font-size: 3rem;
+  color: white;
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.work-background {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+.study-background {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.exercise-background {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+.social-background {
+  background-color: hsl(264, 64%, 52%);
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+.play-background {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+.self-care-background {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.hidden {
+  display: none;
+}

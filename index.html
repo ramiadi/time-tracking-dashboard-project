@@ -1,80 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="stylesheet/style.css">
+
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
+
 <body>
 
-  Report for
-  Jeremy Robson
+  <main class="container">
+    <div class="name">
 
-  Daily
-  Weekly
-  Monthly
+      <div class="name-content">
+        <picture>
+          <source srcset="images/image-jeremy.png" media="(min-width: 768px)">
+          <img src="images/image-jeremy.png" alt="Jeremy Robson" width="50" height="50">
+        </picture>
+        <div>
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
+      </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <div class="button-group">
+        <button>Daily</button>
+        <button>Weekly</button>
+        <button>Monthly</button>
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+    </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+    <div class="work">
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+      <div class="work-background">
+        <img src="images/icon-work.svg" alt="Work icon" width="50" height="50">
+      </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+      <div class="work-content">
+        <h2>Work</h2>
+        <p class="daily-content">5hrs <!-- daily --></p>
+        <p class="weekly-content hidden">32hrs <!-- weekly --></p>
+        <p class="monthly-content hidden">103hrs <!-- monthly --></p>
+      </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+    </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="play">
+
+      <div class="play-background">
+        <img src="images/icon-play.svg" alt="Play icon" width="50" height="50">
+      </div>
+
+      <div class="play-content">
+        <h2>Play</h2>
+        <p class="daily-content">1hr <!-- daily --></p>
+        <p class="weekly-content hidden">10hrs <!-- weekly --></p>
+        <p class="monthly-content hidden">23hrs <!-- monthly --></p>
+      </div>
+
+    </div>
+
+
+    <div class="study">
+
+      <div class="study-background">
+        <img src="images/icon-study.svg" alt="Study icon" width="50" height="50">
+      </div>
+
+      <div class="study-content">
+        <h2>Study</h2>
+        <p class="daily-content">0hrs <!-- daily --></p>
+        <p class="weekly-content hidden">4hrs <!-- weekly --></p>
+        <p class="monthly-content hidden">13hrs <!-- monthly --></p>
+      </div>
+
+    </div>
+
+    <div class="exercise">
+
+      <div class="exercise-background">
+        <img src="images/icon-exercise.svg" alt="Exercise icon" width="50" height="50">
+      </div>
+
+
+      <div class="exercise-content">
+        <h2>Exercise</h2>
+        <p class="daily-content">1hr <!-- daily --></p>
+        <p class="weekly-content hidden">4hrs <!-- weekly --></p>
+        <p class="monthly-content hidden">11hrs <!-- monthly --></p>
+      </div>
+
+    </div>
+
+    <div class="social">
+
+      <div class="social-background">
+        <img src="images/icon-social.svg" alt="Social icon" width="50" height="50">
+      </div>
+
+      <div class="social-content">
+        <h2>Social</h2>
+        <p class="daily-content">1hr <!-- daily --></p>
+        <p class="weekly-content hidden">5hrs <!-- weekly --></p>
+        <p class="monthly-content hidden">21hrs <!-- monthly --></p>
+      </div>
+
+    </div>
+
+    <div class="self-care">
+      <div class="self-care-background">
+        <img src="images/icon-self-care.svg" alt="Self Care icon" width="50" height="50">
+      </div>
+
+      <div class="self-care-content">
+        <h2>Self Care</h2>
+        <p class="daily-content">0hrs <!-- daily --></p>
+        <p class="weekly-content hidden">2hrs <!-- weekly --></p>
+        <p class="monthly-content hidden">7hrs <!-- monthly --></p>
+      </div>
+    </div>
+
+
+  </main>
+  <script src="script/index.js"></script>
 </body>
+
 </html>
