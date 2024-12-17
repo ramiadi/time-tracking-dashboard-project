@@ -154,7 +154,6 @@ body {
   border-radius: 15px;
 }
 
-/* add hover effect on content */
 .work-content:hover,
 .play-content:hover,
 .study-content:hover,
@@ -182,6 +181,28 @@ body {
 .social-background img,
 .self-care-background img {
   float: right;
+}
+
+.work-space-between,
+.play-content-space-between,
+.study-content-space-between,
+.exercise-content-space-between,
+.social-content-space-between,
+.self-care-content-space-between {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+/* put img */
+.work-space-between img,
+.play-content-space-between img,
+.study-content-space-between img,
+.exercise-content-space-between img,
+.social-content-space-between img,
+.self-care-content-space-between img {
+  cursor: pointer;
 }
 
 h2 {
